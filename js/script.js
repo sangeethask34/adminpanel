@@ -26,7 +26,7 @@ xhttp.onreadystatechange = function () {
     var details = document.querySelectorAll("#info-content > div");
     var prev;
 
-    //adding styles in rows on click.
+    
 
     for (var i = 0; i < trows.length; i++) {
       trows[i].addEventListener("click", function (e) {
@@ -37,7 +37,7 @@ xhttp.onreadystatechange = function () {
         infocontent.style.display = "block";
         prev = this;
 
-        //program to displaying on right side
+      
 
         for (var j = 0; j < resp.length; j++) {
           if (this.childNodes[0].innerHTML == resp[j].id) {
@@ -59,7 +59,7 @@ xhttp.onreadystatechange = function () {
       });
     }
 
-    //search box functionality
+    
 
     searchbox.addEventListener("keyup", function () {
       console.log("keyup");
@@ -76,7 +76,7 @@ xhttp.onreadystatechange = function () {
 };
 
 
-//function for creating table
+
 function createrow(tid, fname, lname, email, phone) {
   var row = document.createElement("tr");
   row.classList.add("data-row");
